@@ -1,38 +1,47 @@
+body {
+  background: #111;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .App {
-  text-align: center;
+  background-image: url('https://www.itl.cat/pngfile/big/306-3064758_aston-martin-supercar-hd-wallpaper-aston-martin-vantage.jpg'),
+    url('https://www.supercars.net/blog/wp-content/uploads/2020/09/wallpaperflare.com_wallpaper-1-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fade {
+  width: 100%;
+  height: 100%;
+  background: rgba(112, 112, 112, 0.8);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.d-flex {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.cart {
+  margin: 10px;
+  border: 5px solid lightgreen;
+  padding: 10px;
+  border-radius: 10px;
+  background: #111;
 }
 
-.App-link {
-  color: #61dafb;
+.img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active {
+  border: 3px solid #fff;
 }
